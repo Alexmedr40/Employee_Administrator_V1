@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Empleados</title>
+  <!-- Enlace al Archivo CSS -->
+  <link rel="stylesheet" href="Employee Admininstrator App Sytles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Gestión de Empleados</div>
+        <form id="employee-form" novalidate>
+            <div class="form-group">
+                <span>Nombre</span>
+                <input type="text" placeholder="Ingrese nombre" required>
+                <small>Por favor, ingrese el nombre</small>
+            </div>
+            <div class="form-group">
+                <span>Puesto</span>
+                <input type="text" placeholder="Ingrese puesto" required>
+                <small>Por favor, ingrese el puesto</small>
+            </div>
+            <div class="form-group">
+                <span>Departamento</span>
+                <input type="text" placeholder="Ingrese departamento" required>
+                <small>Por favor, ingrese el departamento</small>
+            </div>
+            <button type="submit" class="btn">Agregar Empleado</button>
+        </form>
+        <table class="employee-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Puesto</th>
+                    <th>Departamento</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="employee-list"></tbody>
+        </table>
+    </div>
+    <!-- Enlace al Archivo Javascript -->
+    <script src="Employee Administrator App Scripts.js"></script>
+    </body>
+</html>
